@@ -5,11 +5,13 @@ import About from "./Component/About";
 import Service from "./Component/Service";
 import Navbar from "./Component/Navbar";
 import PageNotFound from "./Component/PageNotFound";
+import UserList from "./Component/UserList";
+import GetUrlParams from "./Component/GetUrlParams";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello! React router Learning</h1>
+     
       {/* Navigation */}
       <BrowserRouter>
       <Navbar/>
@@ -22,6 +24,8 @@ function App() {
         <Route path="/about" element={<About />}/>
         <Route path="/service" element={<Service />}/>
         <Route path="/*" element={<PageNotFound />}/>
+        {/* <Route path="/user" element={<UserList />}/> */}
+        <Route path="/geturl" element={<GetUrlParams />}/>
       </Routes>
       </BrowserRouter>
     </div>

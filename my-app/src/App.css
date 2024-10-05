@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+ /* Navlink css */
+ nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 30px;
+  background: white;
+ }
+ nav ul{
+  list-style: none;
+ }
+ nav ul li{
+ display: inline;
+ padding: 0 20px;
+ }
+ nav ul li a{
+  text-decoration: none;
+  font-size: 1.2rem;
+ }
+ nav ul li a :hover{
+  color: red;
+ }
